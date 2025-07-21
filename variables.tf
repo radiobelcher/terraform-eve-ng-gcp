@@ -19,3 +19,5 @@ variable "google_credentials_b64" {
   description = "Base64-encoded GCP credentials JSON"
   type        = string
 }
+
+#comment
