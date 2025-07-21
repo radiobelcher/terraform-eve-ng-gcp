@@ -1,8 +1,10 @@
 provider "google" {
-  project = var.project_id
-  region  = var.region
-  zone    = var.zone
+  credentials = base64decode(var.google_credentials_b64)
+  project     = var.project_id
+  region      = var.region
+  zone        = var.zone
 }
+
 
 resource "google_compute_instance" "eve_ng" {
   name         = "eve-ng-vm"
