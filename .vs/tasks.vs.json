@@ -1,0 +1,10 @@
+{
+  "version": "0.2.1",
+  "tasks": [
+    {
+      "taskLabel": "task-eve_ng_startup_autoinstall",
+      "appliesTo": "eve_ng_startup_autoinstall.sh",
+      "type": "launch"
+    }
+  ]
+}

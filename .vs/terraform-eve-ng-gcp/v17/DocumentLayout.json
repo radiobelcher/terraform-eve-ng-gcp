@@ -3,12 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\401510\\source\\repos\\radiobelcher\\terraform-eve-ng-gcp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\401510\\source\\repos\\radiobelcher\\terraform-eve-ng-gcp\\variables.tf||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:variables.tf||{3B902123-F8A7-4915-9F01-361F908088D0}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\401510\\source\\repos\\radiobelcher\\terraform-eve-ng-gcp\\eve_ng_startup_autoinstall.sh||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:eve_ng_startup_autoinstall.sh||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\401510\\source\\repos\\radiobelcher\\terraform-eve-ng-gcp\\firewall.tf||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:firewall.tf||{3B902123-F8A7-4915-9F01-361F908088D0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\401510\\source\\repos\\radiobelcher\\terraform-eve-ng-gcp\\main.tf||{3B902123-F8A7-4915-9F01-361F908088D0}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:main.tf||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\401510\\source\\repos\\radiobelcher\\terraform-eve-ng-gcp\\variables.tf||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:variables.tf||{3B902123-F8A7-4915-9F01-361F908088D0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,6 +35,32 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "eve_ng_startup_autoinstall.sh",
+              "DocumentMoniker": "C:\\Users\\401510\\source\\repos\\radiobelcher\\terraform-eve-ng-gcp\\eve_ng_startup_autoinstall.sh",
+              "RelativeDocumentMoniker": "eve_ng_startup_autoinstall.sh",
+              "ToolTip": "C:\\Users\\401510\\source\\repos\\radiobelcher\\terraform-eve-ng-gcp\\eve_ng_startup_autoinstall.sh",
+              "RelativeToolTip": "eve_ng_startup_autoinstall.sh",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-07-21T22:13:59.52Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "firewall.tf",
+              "DocumentMoniker": "C:\\Users\\401510\\source\\repos\\radiobelcher\\terraform-eve-ng-gcp\\firewall.tf",
+              "RelativeDocumentMoniker": "firewall.tf",
+              "ToolTip": "C:\\Users\\401510\\source\\repos\\radiobelcher\\terraform-eve-ng-gcp\\firewall.tf",
+              "RelativeToolTip": "firewall.tf",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|",
+              "WhenOpened": "2025-07-21T22:09:24.548Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "variables.tf",
               "DocumentMoniker": "C:\\Users\\401510\\source\\repos\\radiobelcher\\terraform-eve-ng-gcp\\variables.tf",
               "RelativeDocumentMoniker": "variables.tf",
@@ -39,13 +73,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "main.tf",
               "DocumentMoniker": "C:\\Users\\401510\\source\\repos\\radiobelcher\\terraform-eve-ng-gcp\\main.tf",
               "RelativeDocumentMoniker": "main.tf",
               "ToolTip": "C:\\Users\\401510\\source\\repos\\radiobelcher\\terraform-eve-ng-gcp\\main.tf",
               "RelativeToolTip": "main.tf",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABUAAAAAAAAAAAAIwD4AAAAAAAAAAAAAAA==",
               "Icon": "00000000-0000-0000-0000-000000000000.000000|",
               "WhenOpened": "2025-07-21T15:40:31.462Z",
               "EditorCaption": ""
