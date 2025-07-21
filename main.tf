@@ -8,6 +8,8 @@ resource "google_compute_instance" "eve_ng" {
   name         = "eve-ng-vm"
   machine_type = "n2-standard-16"
   zone         = var.zone
+  metadata_startup_script = file("eve_ng_startup.sh")
+
 
   boot_disk {
     initialize_params {
