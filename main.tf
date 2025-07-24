@@ -29,7 +29,9 @@ resource "google_compute_instance" "eve_ng" {
 
   shielded_instance_config {
     enable_secure_boot          = false
-    enable_vtpm                 = false
+    enable_vtpm                 = true
     enable_integrity_monitoring = false
   }
+
+  metadata_startup_script = file("eve_ng_startup_autoinstall.sh")
 }
