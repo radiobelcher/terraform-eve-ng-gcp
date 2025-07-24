@@ -20,3 +20,10 @@ resource "google_compute_instance" "eve_ng" {
 
   metadata_startup_script = file("eve_ng_startup_autoinstall.sh")  # or null if you're manually installing
 }
+
+provider "google" {
+  credentials = base64decode(var.google_credentials_b64)
+  project     = var.project_id
+  region      = var.region
+  zone        = var.zone
+}
