@@ -15,7 +15,7 @@ resource "google_compute_instance" "eve_ng" {
     auto_delete = true
     initialize_params {
       image = var.custom_image_name
-      size  = 50
+      size  = 100
       type  = "pd-standard"
     }
   }
@@ -26,17 +26,4 @@ resource "google_compute_instance" "eve_ng" {
   }
 
   tags = ["allow-ssh", "allow-http", "allow-https"]
-}
-
-resource "google_compute_firewall" "allow_external" {
-  name    = "allow-ssh-http-https"
-  network = "default"
-
-  allow {
-    protocol = "tcp"
-    ports    = ["22", "80", "443"]
-  }
-
-  source_ranges = ["0.0.0.0/0"]
-  target_tags   = ["allow-ssh", "allow-http", "allow-https"]
 }
