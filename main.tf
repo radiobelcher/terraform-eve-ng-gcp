@@ -3,12 +3,13 @@ resource "google_compute_instance" "eve_ng" {
   machine_type = "e2-medium"
   zone         = "us-central1-a"
 
-  boot_disk {
-    initialize_params {
-      image = "ubuntu-os-cloud/ubuntu-2004-lts"  # ✅ Change here
-      size  = 50
-    }
+boot_disk {
+  initialize_params {
+    image  = "projects/ubuntu-os-cloud/global/images/family/ubuntu-2004-lts"
+    size   = 40
+    type   = "pd-standard"
   }
+}
 
   network_interface {
     network = "default"
