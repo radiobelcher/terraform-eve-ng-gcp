@@ -20,3 +20,4 @@ variable "google_credentials_b64" {
   type        = string
 }
 
+variable "custom_image_name" {}
