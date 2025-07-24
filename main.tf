@@ -30,6 +30,6 @@ resource "google_compute_instance" "eve_ng" {
   shielded_instance_config {
     enable_secure_boot          = false
     enable_vtpm                 = false
-    enable_integrity_monitoring = true
+    enable_integrity_monitoring = false
   }
 }
