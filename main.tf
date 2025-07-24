@@ -8,15 +8,15 @@ provider "google" {
 
 resource "google_compute_instance" "eve_ng" {
   name         = "eve-ng-vm"
-  machine_type = "e2-medium"
+  machine_type = "n2-standard-8"
   zone         = var.zone
 
   boot_disk {
     auto_delete = true
     initialize_params {
-      image = var.custom_image_name
+      image = "nested-ubuntu-jammy"
       size  = 100
-      type  = "pd-standard"
+      type  = "pd-ssd"
     }
   }
 
@@ -26,4 +26,10 @@ resource "google_compute_instance" "eve_ng" {
   }
 
   tags = ["allow-ssh", "allow-http", "allow-https"]
+
+  shielded_instance_config {
+    enable_secure_boot          = false
+    enable_vtpm                 = false
+    enable_integrity_monitoring = true
+  }
 }
