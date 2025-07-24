@@ -20,4 +20,3 @@ variable "google_credentials_b64" {
   type        = string
 }
 
-#commen
