@@ -1,0 +1,4 @@
+# Shell scripts must use LF so they run on the Linux VM regardless of host OS.
+*.sh        text eol=lf
+provisioning/** text eol=lf
+*.tf        text eol=lf

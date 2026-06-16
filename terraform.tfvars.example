@@ -1,0 +1,14 @@
+project_id             = "your-gcp-project"
+region                 = "us-central1"
+zone                   = "us-central1-a"
+google_credentials_b64 = "BASE64_OF_SERVICE_ACCOUNT_JSON"
+
+server_name        = "lab.radiobelcher.com"
+
+# Duo Web SDK app (Duo Admin Panel -> Applications -> Web SDK)
+duo_client_id      = "DIXXXXXXXXXXXXXXXXXX"
+duo_api_host       = "api-XXXXXXXX.duosecurity.com"
+
+# Secrets — set via TF_VAR_* env / Terraform Cloud sensitive vars, NOT in git:
+#   gateway_secret_key = "openssl rand -hex 32"
+#   duo_client_secret  = "...from Duo..."

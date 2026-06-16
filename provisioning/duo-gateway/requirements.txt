@@ -1,0 +1,5 @@
+Flask==3.0.3
+gunicorn==22.0.0
+requests==2.32.3
+itsdangerous==2.2.0
+duo_universal==1.2.0

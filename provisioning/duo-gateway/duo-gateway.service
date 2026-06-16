@@ -1,0 +1,25 @@
+[Unit]
+Description=Duo MFA gateway for EVE-NG
+After=network.target
+
+[Service]
+Type=simple
+User=duogw
+Group=duogw
+EnvironmentFile=/etc/duo-gateway/gateway.env
+WorkingDirectory=/opt/duo-gateway
+ExecStart=/opt/duo-gateway/venv/bin/gunicorn \
+    --workers 3 --bind 127.0.0.1:5000 \
+    --access-logfile - --error-logfile - \
+    app:app
+Restart=on-failure
+RestartSec=3
+# Hardening
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/var/log/duo-gateway
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,48 @@
+/*
+ * Black + orange theme override for the EVE-NG (AdminLTE) web UI.
+ * Installed over /opt/unetlab/html/themes/adminLTE/unl_data/css/custom_unl.css
+ * (a .bak of the original is kept by the apply script).
+ * This styles the EVE dashboard that loads AFTER the Duo gateway login.
+ */
+:root {
+  --rb-bg:#0a0a0a; --rb-panel:#161616; --rb-line:#2a2a2a;
+  --rb-orange:#ff7a00; --rb-orange-hi:#ff9233; --rb-text:#e6e6e6; --rb-muted:#8d8d8d;
+}
+
+body, .wrapper, .content-wrapper, .content { background:var(--rb-bg) !important; color:var(--rb-text) !important; }
+
+/* Top header + sidebar */
+.main-header .navbar, .main-header .logo { background:#111 !important; border-bottom:2px solid var(--rb-orange) !important; }
+.main-header .logo { color:var(--rb-orange) !important; font-weight:700; }
+.skin-blue .main-header .navbar { background:#111 !important; }
+.main-sidebar, .left-side { background:#101010 !important; }
+.sidebar-menu > li.active > a,
+.sidebar-menu > li:hover > a { border-left-color:var(--rb-orange) !important; background:#1b1b1b !important; color:var(--rb-orange) !important; }
+.sidebar a { color:#cfcfcf !important; }
+
+/* Boxes / panels */
+.box, .modal-content, .nav-tabs-custom { background:var(--rb-panel) !important; border-color:var(--rb-line) !important; }
+.box.box-primary { border-top-color:var(--rb-orange) !important; }
+.box-header { color:var(--rb-text) !important; border-bottom:1px solid var(--rb-line) !important; }
+
+/* Buttons */
+.btn-primary, .btn-success {
+  background:linear-gradient(145deg,var(--rb-orange-hi),var(--rb-orange)) !important;
+  border-color:var(--rb-orange-hi) !important; color:#0a0a0a !important; font-weight:600;
+}
+.btn-primary:hover, .btn-success:hover { filter:brightness(1.08); }
+.btn-default { background:#1f1f1f !important; color:var(--rb-text) !important; border-color:var(--rb-line) !important; }
+
+/* Inputs */
+.form-control { background:#0e0e0e !important; color:var(--rb-text) !important; border-color:var(--rb-line) !important; }
+.form-control:focus { border-color:var(--rb-orange) !important; box-shadow:0 0 0 2px rgba(255,122,0,.2) !important; }
+
+/* Links + accents */
+a { color:var(--rb-orange) !important; }
+a:hover { color:var(--rb-orange-hi) !important; }
+.text-primary, .text-light-blue { color:var(--rb-orange) !important; }
+.progress-bar { background-color:var(--rb-orange) !important; }
+
+/* The stock EVE login (fallback if gateway is ever bypassed/disabled) */
+.login-box-body, .register-box-body { background:var(--rb-panel) !important; border-top:3px solid var(--rb-orange); }
+.login-logo a, .login-box-msg { color:var(--rb-orange) !important; }

@@ -7,9 +7,10 @@ resource "google_compute_firewall" "allow_ssh_http_https" {
     ports    = ["22", "80", "443"]
   }
 
-  direction = "INGRESS"
+  direction     = "INGRESS"
   source_ranges = ["0.0.0.0/0"]
-  target_tags   = ["eve-ng"]
+  # Matches the "eve-ng" tag now present on the instance (see main.tf).
+  target_tags = ["eve-ng"]
 
   description = "Allow SSH, HTTP, and HTTPS traffic to EVE-NG instances"
 }
